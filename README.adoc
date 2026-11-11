@@ -86,7 +86,22 @@ cd code
 ./test.sh
 ----
 
-For more details on build and running the docker containers link:here[dockerfiles].
+For more details on building and running the Docker containers, see link:dockerfiles/README.adoc[the Docker instructions].
+
+# Running the first example
+
+From the repository root, build the link:01-basic/A-hello-cmake[Hello CMake example] in a separate directory:
+
+[source,bash]
+----
+mkdir -p build-hello
+cd build-hello
+cmake ../01-basic/A-hello-cmake
+cmake --build .
+./hello_cmake
+----
+
+The executable prints `Hello CMake!`. Each example directory contains its own instructions for the next steps.
 
 # Other Links
 
